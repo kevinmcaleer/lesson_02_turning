@@ -19,6 +19,7 @@ void setup() {
   // used when uploading your code
   Serial.begin(9600);
 
+  Serial.println("SMARS OS v1.0")
   // set the Arduino pin to OUTPUT mode
   pinMode(motor_A, OUTPUT);
   pinMode(motor_B, OUTPUT);
@@ -108,25 +109,25 @@ void loop(){
     switch(c) {
     // press the 'w' key to move SMARS Forward
     case 'w':
-    Serial.println('Moving Forward');
+    Serial.println("Moving Forward");
     forward();
     break;
 
     // press the 's' key to move SMARS backward
     case 's':
-    Serial.println('Moving Backward');
+    Serial.println("Moving Backward");
     backward();
     break;
 
     // press the 'a' key to move SMARS left
     case 'a':
-    Serial.println('Turning Left');
+    Serial.println("Turning Left");
     turnLeft();
     break;
 
     // press the 'd' key to move SMARS right
     case 'd':
-    Serial.println('Turning Right');
+    Serial.println("Turning Right");
     turnRight();
     break;
     }
